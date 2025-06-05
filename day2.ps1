@@ -82,4 +82,7 @@ function Test-Safety
 #part 1
 Write-Output "The number of safe reports is $(Test-Safety($reports))"
 
-
+$report0 = $reports[0] -split " " -as [int[]]
+$report0.GetType()
+$report0.Rank
+$report0.Length
